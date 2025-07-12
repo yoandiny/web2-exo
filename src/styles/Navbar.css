@@ -1,0 +1,52 @@
+nav{
+    background-color: var(--secondary-color);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 107px;
+}
+
+.hei-logo{
+    width: 90px;
+    height: 70px;
+    margin-left: 11.9em;
+}
+
+nav ul{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    width: 100%;
+    padding: 0 20px;
+    margin-left: 20em;
+    
+}
+
+nav ul li{
+    margin-inline: 10px;
+}
+
+nav li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: var(--primary-color);
+    font-family: 'Poppins', sans-serif;
+    font-weight: 550;
+    font-size: 1.1em;
+    line-height: 1.6em;
+}
+
+.navbar-intranet{
+    width: 120px;
+    height: 45px;
+    padding: 1em;
+    background-color: var(--tertiary-color);
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
