@@ -58,6 +58,7 @@ function App() {
             engagés vers l’excellence. Nous sommes conscients que cette équipe est la pierre angulaire de l’employabilité de
             nos étudiants, elle a été soigneusement sélectionnée.
           </p>
+        <Slider2/>
 
         </section>
 
