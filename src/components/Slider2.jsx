@@ -131,5 +131,6 @@ const Slider2 = () => {
             </div>
         </div>
 
-            )
-        }
+    )
+}
+export default Slider2;
