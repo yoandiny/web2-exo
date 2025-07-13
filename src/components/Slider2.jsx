@@ -73,4 +73,22 @@ const Slider2 = () => {
     const prev = () => {
         if (index > 0) goToSlide(index - 1);
     };
+
+    useEffect(() => {
+        slideInterval.current = setInterval(() => {
+            next();
+        }, 5000);
+        return () => clearInterval(slideInterval.current);
+    }, [index]);
+
+    useEffect(() => {
+        if (index === enseignants.length) {
+            timeoutRef.current = setTimeout(() => {
+                setIsTransitioning(false);
+                setIndex(0);
+            }, 600);
+        }
+        return () => clearTimeout(timeoutRef.current);
+    }, [index]);
+
 }
