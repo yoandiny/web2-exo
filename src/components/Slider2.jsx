@@ -114,5 +114,22 @@ const Slider2 = () => {
             </div>
 
 
+            <button className="nav-button right" onClick={() => { next(); clearInterval(slideInterval.current); }}>❯</button>
+
+            <div className="pagination">
+                {enseignants.slice(0, enseignants.length - visibleCount + 1).map((_, i) => (
+                    <button
+                        key={i}
+                        onClick={() => {
+                            setIndex(i);
+                            setIsTransitioning(true);
+                            clearInterval(slideInterval.current);
+                        }}
+                        className={`dot ${index === i ? "active" : ""}`}
+                    />
+                ))}
+            </div>
+        </div>
+
             )
         }
