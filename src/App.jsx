@@ -78,6 +78,23 @@ function App() {
           </h2>
           <p className='domains-subtitle'>Au cours de vos trois ans de formation, naviguez entre les domaines les plus porteurs du numérique du présent et
             de l’avenir :</p>
+            <span className="domains-container">
+              <div className='domain-item'>
+                <i class='bx bxs-code-alt'></i>
+                
+              
+            </div>
+
+            <div className='domain-item'>
+                
+              
+            </div>
+
+            <div className='domain-item'>
+                
+              
+            </div>
+            </span>
 
         </section>
 
