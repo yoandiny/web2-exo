@@ -9,20 +9,45 @@ function App() {
   return (
     <div className='app'>
     <title>Accueil - HEI | Haute Ecole d'Informatique de Madagascar</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'></link>
       <Navbar />
 
       <Slider />
 
       <section id='about'>
-        <div className="about-image-container">
-          <img src={StudentIma} alt="" />
-        </div>
+        
+
+          <img className='about-image' src={StudentImage} alt="" />
+        
         <div className="about-text-container">
           <h2 className='about-text'>A propos de nous</h2>
-        <h3>+3ans</h3>
-        <p>Depuis 3 ans, nous formons ceux qui décodent le futur, aux métiers de l’informatique. Nous sommes un groupe d’experts,
+        <div className="icon-container">
+          <i class='bx bxs-graduation'></i>
+          <h2> +3ans</h2>
+          </div>
+        <p className='about-description'>Depuis 3 ans, nous formons ceux qui décodent le futur, aux métiers de l’informatique. Nous sommes un groupe d’experts,
            de professionnels et des passionnés de l’informatique de Madagascar et du monde entier.</p>
+
+        <div className="icon-container">
+          <i class='bx bxs-user'></i>
+           <h2>  +250 étudiants</h2>
         </div>
+        <p className='about-description'>
+          Plus de 250 étudiants et plus d’une dizaine d’entreprises ont déjà fait confiance à notre formation habilitée
+          par l’État malgache. Avec eux tous, nous sommes fiers de pouvoir parler de la “grande famille HEI”.
+        </p>
+
+        <div className="icon-container">
+          <i class='bx bxs-medal' ></i>
+           <h2> Notre mission</h2>
+        </div>
+        <p className='about-description'>
+          Notre mission est d’amener des jeunes malgaches sur des domaines porteurs comme l’intelligence artificielle,
+          la cybersécurité ou la programmation afin de favoriser leur employabilité et le développement de Madagascar.
+        </p>
+        </div>
+        
+        
 
       </section>
     </div>

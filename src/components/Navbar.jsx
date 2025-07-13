@@ -1,5 +1,5 @@
 import Logo from '../assets/hei-logo.png'
-import '../styles/Navbar.css';
+import '../components/styles/Navbar.css';
 
 export const Navbar = () => {
     return (
