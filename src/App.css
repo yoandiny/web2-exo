@@ -2,6 +2,7 @@
   --primary-color: #fff;
   --secondary-color: #001948;
   --tertiary-color: #eba51c;
+  --fourth-color: #f2f2f2;
 }
 
 *{
@@ -71,7 +72,6 @@
 #team{
   width: 100%;
   height: 720px;
-  text-align: center;
   background-color: #6586C7;
   color: var(--primary-color);
 
@@ -82,6 +82,7 @@
 .team-title{
   font-size: 50px;
   margin-top: 1em;
+  text-align: center;
   font-family: Garamond, serif;
 }
 
@@ -97,17 +98,25 @@
 #outlet{
   display: flex;
   align-items: center;
-  justify-content: space-between;
   flex-direction: row;
   width: 100%;
   height: 570px;
 }
 
+.outlet-text-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 3.5em;
+  height: auto;
+}
+
 .outlet-title{
-  text-align: center;
+  text-align: left;
   font-size: 50px;
   font-family: Garamond, serif;
-  margin-top: 2em;
+  margin-top: -1em;
+  margin-left: 3.5em;
 }
 
 .outlet-description{
@@ -122,6 +131,29 @@
 .outlet-image{
   width: 380px;
   height: 395px;
-  margin-left: 4em;
-  margin-top: 5em;
+
+}
+
+#domains{
+  width: 100%;
+  height: 1287px;
+  background-color: var(--fourth-color);
+  color: var(--secondary-color);
+  padding: 1em;
+}
+
+#admissions{
+  width: 100%;
+  height: 728px;
+  background-color: #6586C7;
+  color: var(--primary-color);
+  padding: 1em;
+}
+
+#program{
+  width: 100%;
+  height: 1244px;
+  background-color: #6586C7;
+  color: var(--primary-color);
+  padding: 1em;
 }

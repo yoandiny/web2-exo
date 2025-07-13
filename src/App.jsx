@@ -60,7 +60,7 @@ function App() {
           </p>
         </section>
 
-        <section className='outlet'>
+        <section id='outlet'>
           <span className='outlet-text-container'>
             <h3 className='outlet-title'>Quelques débouchés</h3>
             <p className='outlet-description'>
@@ -71,6 +71,18 @@ function App() {
             </p>
           </span>
           <img className='outlet-image' src={OutletImage} alt="" />
+        </section>
+        <section id='domains'>
+          <h2 className='domains-title'>
+            Domaines
+          </h2>
+          <p className='domains-subtitle'>Au cours de vos trois ans de formation, naviguez entre les domaines les plus porteurs du numérique du présent et
+            de l’avenir :</p>
+
+        </section>
+
+        <section id='program'>
+
         </section>
 
 
