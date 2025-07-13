@@ -51,3 +51,26 @@ const enseignants = [
         image: Lou,
     },
 ];
+
+const extendedCards = [...enseignants, ...enseignants.slice(0, 3)];
+
+const Slider2 = () => {
+    const [index, setIndex] = useState(0);
+    const [isTransitioning, setIsTransitioning] = useState(true);
+    const slideInterval = useRef(null);
+    const timeoutRef = useRef(null);
+    const visibleCount = 3;
+
+    const goToSlide = (i) => {
+        setIndex(i);
+        setIsTransitioning(true);
+    };
+
+    const next = () => {
+        if (index < enseignants.length) goToSlide(index + 1);
+    };
+
+    const prev = () => {
+        if (index > 0) goToSlide(index - 1);
+    };
+}
