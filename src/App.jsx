@@ -1,6 +1,6 @@
 import './App.css'
 import { Navbar } from './components/Navbar'
-import { Slider } from './components/Slider'
+import  Slider  from './components/Slider'
 import StudentImage from './assets/students.jpg'
 
 function App() {
@@ -16,9 +16,7 @@ function App() {
 
       <section id='about'>
 
-        <div className="text-4xl font-bold text-blue-500 text-center p-8">
-          Hello Tailwind sans npx 😎
-        </div>
+
           <img className='about-image' src={StudentImage} alt="" />
         
         <div className="about-text-container">
