@@ -90,6 +90,10 @@ export default function Slider() {
                     </div>
                 ))}
             </div>
+
+            <button id="left-btn" onClick={() => { prevSlide(); clearInterval(slideInterval.current); }}>❮</button>
+            <button id="right-btn" onClick={() => { nextSlide(); clearInterval(slideInterval.current); }}>❯</button>
+
         </div>
     )
 }
