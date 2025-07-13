@@ -91,4 +91,28 @@ const Slider2 = () => {
         return () => clearTimeout(timeoutRef.current);
     }, [index]);
 
-}
+    return (
+        <div className="carousel-container">
+            <button className="nav-button left" onClick={() => { prev(); clearInterval(slideInterval.current); }}>❮</button>
+
+            <div className="carousel-wrapper">
+                <div
+                    className={`carousel ${isTransitioning ? "transition" : ""}`}
+                    style={{ transform: `translateX(-${(100 / 3) * index}%)` }}
+
+                >
+                    {extendedCards.map((enseignant, i) => (
+                        <div className="card" key={i}>
+                            <div className="cardBlock" >
+                                <img src={enseignant.image} alt={enseignant.nom} className="profile-img" />
+                                <h3>{enseignant.nom}</h3>
+                                <p>{enseignant.description}</p>
+                            </div>
+                        </div>
+                    ))}
+                </div>
+            </div>
+
+
+            )
+        }
