@@ -1,4 +1,4 @@
-
+import { useState, useEffect, useRef } from "react";
 import heiBanner1 from "../assets/hei-banner-1.jpg";
 import heiBanner2 from "../assets/hei-banner-2.jpg";
 import heiBanner3 from "../assets/hei-banner-3.jpg";
