@@ -46,10 +46,17 @@ function App() {
           la cybersécurité ou la programmation afin de favoriser leur employabilité et le développement de Madagascar.
         </p>
         </div>
-        
-        
-
+      
       </section>
+      <section id='team'>
+          <h2>L'équipe pédagogique</h2>
+          <p>
+            Notre équipe pédagogique se compose d’experts nationaux et internationaux de l’informatique, de la cybersécurité,
+            de l’intelligence artificielle, dont un ingénieur chez Google. Ils sont passionnés par l’informatique et sont
+            engagés vers l’excellence. Nous sommes conscients que cette équipe est la pierre angulaire de l’employabilité de
+            nos étudiants, elle a été soigneusement sélectionnée.
+          </p>
+        </section>
     </div>
   )
 }
