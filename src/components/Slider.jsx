@@ -22,7 +22,44 @@ const extendedSlides = [...slides, slides[0]];
 
 
 export default function Slider() {
+    const [current, setCurrent] = useState(0);
+    const [isTransitioning, setIsTransitioning] = useState(true);
+    const slideInterval = useRef(null);
+    const timeoutRef = useRef(null);
 
+    const goToSlide = (index) => {
+        setCurrent(index);
+        setIsTransitioning(true);
+    };
+
+    const nextSlide = () => {
+        if (current < slides.length) {
+            goToSlide(current + 1);
+        }
+    };
+
+    const prevSlide = () => {
+        if (current > 0) {
+            goToSlide(current - 1);
+        }
+    };
+
+    useEffect(() => {
+        slideInterval.current = setInterval(() => {
+            nextSlide();
+        }, 5000);
+        return () => clearInterval(slideInterval.current);
+    }, [current, nextSlide]);
+
+    useEffect(() => {
+        if (current === slides.length) {
+            timeoutRef.current = setTimeout(() => {
+                setIsTransitioning(false);
+                setCurrent(0);
+            }, 700);
+        }
+        return () => clearTimeout(timeoutRef.current);
+    }, [current]);
 
     return (
         <div className="slider">
