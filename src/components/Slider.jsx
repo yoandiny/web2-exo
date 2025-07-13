@@ -94,6 +94,20 @@ export default function Slider() {
             <button id="left-btn" onClick={() => { prevSlide(); clearInterval(slideInterval.current); }}>❮</button>
             <button id="right-btn" onClick={() => { nextSlide(); clearInterval(slideInterval.current); }}>❯</button>
 
+            <div className="pagination">
+                {slides.map((_, index) => (
+                    <button
+                        key={index}
+                        onClick={() => {
+                            setCurrent(index);
+                            setIsTransitioning(true);
+                            clearInterval(slideInterval.current);
+                        }}
+                        className={`dot ${current === index ? "active" : ""}`}
+                    />
+                ))}
+            </div>
+
         </div>
     )
 }
