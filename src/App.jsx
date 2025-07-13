@@ -1,6 +1,7 @@
 import './App.css'
 import { Navbar } from './components/Navbar'
 import  Slider  from './components/Slider'
+import  Slider2  from './components/Slider2'
 import StudentImage from './assets/students.jpg'
 import OutletImage from './assets/outlet.jpg'
 
@@ -13,7 +14,6 @@ function App() {
     <title>Accueil - HEI | Haute Ecole d'Informatique de Madagascar</title>
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'></link>
       <Navbar />
-
       <Slider />
 
       <section id='about'>
@@ -48,7 +48,7 @@ function App() {
           la cybersécurité ou la programmation afin de favoriser leur employabilité et le développement de Madagascar.
         </p>
         </div>
-      
+
       </section>
       <section id='team'>
           <h2 className='team-title'>L'équipe pédagogique</h2>
@@ -58,6 +58,7 @@ function App() {
             engagés vers l’excellence. Nous sommes conscients que cette équipe est la pierre angulaire de l’employabilité de
             nos étudiants, elle a été soigneusement sélectionnée.
           </p>
+
         </section>
 
         <section className='outlet'>
