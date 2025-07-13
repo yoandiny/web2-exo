@@ -2,11 +2,13 @@ import './App.css'
 import { Navbar } from './components/Navbar'
 import  Slider  from './components/Slider'
 import StudentImage from './assets/students.jpg'
+import OutletImage from './assets/outlet.jpg'
 
 function App() {
 
 
   return (
+    
     <div className='app'>
     <title>Accueil - HEI | Haute Ecole d'Informatique de Madagascar</title>
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'></link>
@@ -49,14 +51,29 @@ function App() {
       
       </section>
       <section id='team'>
-          <h2>L'équipe pédagogique</h2>
-          <p>
+          <h2 className='team-title'>L'équipe pédagogique</h2>
+          <p className='team-description'>
             Notre équipe pédagogique se compose d’experts nationaux et internationaux de l’informatique, de la cybersécurité,
             de l’intelligence artificielle, dont un ingénieur chez Google. Ils sont passionnés par l’informatique et sont
             engagés vers l’excellence. Nous sommes conscients que cette équipe est la pierre angulaire de l’employabilité de
             nos étudiants, elle a été soigneusement sélectionnée.
           </p>
         </section>
+
+        <section className='outlet'>
+          <span className='outlet-text-container'>
+            <h3 className='outlet-title'>Quelques débouchés</h3>
+            <p className='outlet-description'>
+              Formez-vous à une panoplie de métiers du numérique avec nous et venez acquérir les fondements de la programmation
+               (qui vous servira pour les différents métiers) ! Ce sont des métiers porteurs, des métiers du présent, des métiers
+                du futur…<br />
+            <br/>Développeur back end, développeur front end, développeurs mobile, chefs de projet, exploitants cloud, analystes cybersécurité, pentesters, auditeur technique SSI, auditeur organisationnel SSI, administrateur système et réseau, développeur de sécurité…
+            </p>
+          </span>
+          <img className='outlet-image' src={OutletImage} alt="" />
+        </section>
+
+
     </div>
   )
 }
