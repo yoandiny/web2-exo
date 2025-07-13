@@ -31,6 +31,14 @@ nav li{
     list-style: none;
 }
 
+nav ul li a:hover{
+    color: var(--tertiary-color);
+}
+
+.navbar-intranet a:hover {
+    color: var(--secondary-color);
+}
+
 a{
     text-decoration: none;
     color: var(--primary-color);
