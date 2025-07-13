@@ -23,3 +23,36 @@
 .carousel.transition {
     transition: transform 0.6s ease;
 }
+
+.card {
+    padding: 1rem;
+    text-align: center;
+    color: var(--secondary-color);
+    flex: 0 0 calc(100% / 3);
+    padding: 0 1rem;
+
+}
+.cardBlock{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px;
+    box-sizing: border-box;
+    background: #fff;
+    height: 100%;
+    width: 100%;
+}
+.cardBlock p{
+    font-size: .86rem;
+    font-weight: lighter;
+}
+
+.profile-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 1rem;
+    border: 2px solid #ccc;
+}
