@@ -4,6 +4,10 @@ import  Slider  from './components/Slider'
 import  Slider2  from './components/Slider2'
 import StudentImage from './assets/students.jpg'
 import OutletImage from './assets/outlet.jpg'
+import Cyber from './assets/cyber.png'
+import AI from './assets/ai.png'
+import Code from './assets/code.png'
+import Footer from './components/Footer'
 
 function App() {
 
@@ -11,7 +15,7 @@ function App() {
   return (
     
     <div className='app'>
-    <title>Accueil - HEI | Haute Ecole d'Informatique de Madagascar</title>
+    
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'></link>
       <Navbar />
       <Slider />
@@ -82,17 +86,44 @@ function App() {
             de l’avenir :</p>
             <span className="domains-container">
               <div className='domain-item'>
-                <i class='bx bxs-code-alt'></i>
+                <img className='domain-image' src={Cyber} alt="" />
+                <h3 className='domain-title'>
+                  Cloud et Cybersécurité
+                </h3>
+                <p className='domain-description'>
+                  Maîtrisez les engrenages des outils en ligne interconnectés sur les nuages (comme sur AWS). Ou encore,
+                  devenez maître de la sécurisation des données en ligne ou des programmes et applications contre les
+                   cybermenaces. Chez HEI, vous allez vous former dans le domaine du cloud et de la cybersécurité.
+                </p>
                 
               
             </div>
 
             <div className='domain-item'>
+              <img className='domain-image' src={AI} alt="" />
+              <h3 className='domain-title'>
+                Intelligence artificielle
+              </h3>
+              <p className='domain-description'>
+                Le monde de la reconnaissance faciale ou la détection d’obstacles par les voitures semi-autonomes vous fascinent ?
+                 Ce n’est pas sorcier, cela s’apprend. Apprenez les bases de l’intelligence artificielle lors de vos cours chez
+                  HEI.
+              </p>
+              
                 
               
             </div>
 
             <div className='domain-item'>
+              <img className='domain-image' src={Code} alt="" />
+              <h3 className='domain-title'>
+                Ingénierie logicielle
+              </h3>
+              <p className='domain-description'>
+                Apprenez les principes de la conception ou le développement de programmes et d’applications web et mobile et
+                 explorez le monde fascinant des “codes”. A la fin de votre formation, vous serez aptes à proposer des solutions
+                  pratiques, créatives et innovantes à des particuliers ou des entreprises pour leurs besoins numériques.
+              </p>
                 
               
             </div>
@@ -100,9 +131,7 @@ function App() {
 
         </section>
 
-        <section id='program'>
-
-        </section>
+       <Footer />
 
 
     </div>
